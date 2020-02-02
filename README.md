@@ -1,3 +1,5 @@
+![Cupcake](https://github.com/andrelbarreto/Best_Cupcakes/public/assets/img/cupcake_drawing.jpg)
+
 # Best_Cupcakes
 App using node JS, express MVC for best cupcakes database
 
