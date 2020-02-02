@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/cupcake", function(req, res) {
-  cupcake.create(["cupcake_name", "devoured"], [req.body.name, req.body.devoured], function(result) {
+  cupcake.create(["cupcake_name", "devoured"], [req.body.cupcake_name, req.body.devoured], function(result) {
     // Send back the ID of the cupcake
     res.json({ id: result.insertId });
   });
