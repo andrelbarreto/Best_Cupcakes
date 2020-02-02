@@ -47,6 +47,10 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 * **This assignment must be deployed.** * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
 
+-----------IMPORTANT NOTE----------
+For this exercise, instead of using burgers this app chose to use the same guidelines but for cupcakes ! Therefore, any mention on instructions of 'burger' should be understood as 'cupcake' for this app.
+
+
 ## Instructions
 
 #### App Setup
