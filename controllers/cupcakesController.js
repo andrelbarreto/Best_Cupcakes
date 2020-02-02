@@ -16,12 +16,20 @@ router.get("/", function(req, res) {
   });
 });
 
+
 router.post("/api/cupcake", function(req, res) {
-  cupcake.create(["cupcake_name", "devoured"], [req.body.cupcake_name, req.body.devoured], function(result) {
+  if (req.body.cupcake_name == '') {
+    console.log('No cupcake name entered');
+    res.redirect('/');
+} else {
+    //takes the request object using it as input f
+    cupcake.create(["cupcake_name", "devoured"], [req.body.cupcake_name, req.body.devoured], function(result)  {
     // Send back the ID of the cupcake
     res.json({ id: result.insertId });
+    console.log(result);
+    res.redirect('/');
   });
-});
+}});
 
 router.put("/api/cupcake/:id", function(req, res) {
   var condition = "id = " + req.params.id;
