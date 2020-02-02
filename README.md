@@ -1,4 +1,4 @@
-![Cupcake](https://github.com/andrelbarreto/Best_Cupcakes/public/assets/img/cupcake_drawing.jpg)
+![Cupcake](https://github.com/andrelbarreto/Best_Cupcakes/blob/master/public/assets/img/cupcake-drawing.jpg)
 
 # Best_Cupcakes
 App using node JS, express MVC for best cupcakes database
