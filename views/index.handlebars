@@ -11,17 +11,17 @@
 			<div class="row">
 			  {{#each cupcake}}
 			  	{{#unless this.devoured}}
-				<div class="col-xs-9 text-center">
+				<div class="col-xs-9">
 					<pre>
-					{{this.id}}. {{this.cupcake_name}}
+					{{this.id}}.{{this.cupcake_name}}
 					</pre>
 				  	
 				</div>
 				<div class="col-xs-3 text-center">
-					<form method="POST" action="/api/cupcake/update?_method=PUT" class="button-size">
-						<input input type="hidden" type="text" name="id" value={{this.id}}><br>
-						<button type="submit" class="btn btn-default">Devour it!</button>
-					</form>
+					<div class="button-size">
+						<span>{{this.id}} </span>
+						<button type="submit" data-id="{{this.id}}" class="change-devoured" class="btn-default">Devour it!</button>
+					</div>
 				</div>
 				{{/unless}}
 			  {{/each}}
@@ -39,12 +39,12 @@
 
 <div class="container">
 	<div class="row">
-		<div class="form-group col-xs-12 text-center enter_section">
+		<div class="create-form col-xs-12 text-center enter_section">
 			<form action="/api/cupcake" method="POST">
         <input type="text" id="ca" name="name" class="form-control">
-				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Add your yummy cupcake !</button>
 			</form>
-			<p>Enter one of your favorite cupcakes that you would like to eat and hit "Submit" button.</p>
+			<p>Enter a favorite cupcake that you would like to devour and hit that button.</p>
 		</div>
 	</div>
 </div>

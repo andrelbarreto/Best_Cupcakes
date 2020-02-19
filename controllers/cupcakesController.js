@@ -23,9 +23,8 @@ router.post("/api/cupcake", function(req, res) {
     res.redirect('/');
 } else {
     //takes the request object using it as input f
-    cupcake.create(["cupcake_name", "devoured"], [req.body.cupcake_name, req.body.devoured], function(result)  {
-    // Send back the ID of the cupcake
-    res.json({ id: result.insertId });
+    cupcake.create(["cupcake_name", "devoured"], [req.body.cupcake_name, false], function(result)  {
+   
     console.log(result);
     res.redirect('/');
   });

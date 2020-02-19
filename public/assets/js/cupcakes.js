@@ -1,6 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-devoured").on("click", function(event) {
+    event.preventDefault();
+    
     var id = $(this).data("id");
     var newDevour = $(this).data("newdevoured");
 
@@ -15,6 +17,7 @@ $(function() {
     }).then(
       function() {
         console.log("changed devour to", newDevour);
+
         // Reload the page to get the updated list
         location.reload();
       }
@@ -26,10 +29,11 @@ $(function() {
     event.preventDefault();
 
     var newCupcake = {
-      cupcake_name: $("#ca").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      cupcake_name: $("#ca").val(),
+      //devoured: $("[name=devoured]:checked").val()
     };
-
+    console.log(newCupcake);
+   
     // Send the POST request.
     $.ajax("/api/cupcake", {
       type: "POST",
