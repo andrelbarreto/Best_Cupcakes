@@ -223,5 +223,6 @@ Attempt to complete homework assignment as described in instructions. If unable 
 
 ### Hosting on Heroku
 
-App is deployed with name best-cupcakes-ever 
+App is deployed at
+https://best-cupcakes-ever.herokuapp.com/
 
