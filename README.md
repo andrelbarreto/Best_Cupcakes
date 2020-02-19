@@ -1,4 +1,4 @@
-![Cupcake](https://github.com/andrelbarreto/Best_Cupcakes/blob/master/public/assets/img/cupcake-drawing.jpg)
+![Cupcake](https://github.com/andrelbarreto/Best_Cupcakes/blob/master/public/assets/img/appvisual.png)
 
 # Best_Cupcakes
 App using node JS, express MVC for best cupcakes database
@@ -57,7 +57,7 @@ For this exercise, instead of using burgers this app chose to use the same guide
 
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+1. Create a GitHub repo called `cucpcakes` and clone it to your computer.
 
 2. Make a package.json file by running `npm init` from the command line.
 
@@ -74,13 +74,13 @@ For this exercise, instead of using burgers this app chose to use the same guide
 
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+1. Inside your `cupcake` directory, create a folder named `db`.
 
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
 
-   * Create the `burgers_db`.
-   * Switch to or use the `burgers_db`.
-   * Create a `burgers` table with these fields:
+   * Create the `cupcakes_db`.
+   * Switch to or use the `cupcakes_db`.
+   * Create a `cupcakes` table with these fields:
      * **id**: an auto incrementing int that serves as the primary key.
      * **burger_name**: a string.
      * **devoured**: a boolean.
@@ -103,7 +103,7 @@ For this exercise, instead of using burgers this app chose to use the same guide
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside your `cupcake` directory, create a folder named `config`.
 
 2. Create a `connection.js` file inside `config` directory.
 
@@ -129,28 +129,28 @@ For this exercise, instead of using burgers this app chose to use the same guide
 
   * In `models`, make a `burger.js` file.
 
-    * Inside `burger.js`, import `orm.js` into `burger.js`
+    * Inside `cupcakes.js`, import `orm.js` into `cupcake.js`
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    * Also inside `cupcake.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `cupcake.js` file.
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `cupcake` directory, create a folder named `controllers`.
 
 2. In `controllers`, create the `burgers_controller.js` file.
 
-3. Inside the `burgers_controller.js` file, import the following:
+3. Inside the `cupcakes_controller.js` file, import the following:
 
    * Express
-   * `burger.js`
+   * `cupcake.js`
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside your `cupcake` directory, create a folder named `views`.
 
    * Create the `index.handlebars` file inside `views` directory.
 
@@ -224,30 +224,9 @@ Please see [Heroku’s Account Verification Information](https://devcenter.herok
 
 - - -
 
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-- - -
-
 ### Add To Your Portfolio
 
 After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
 
 - - -
-
-### One More Thing
-
-This is a really tough homework assignment, but we want you to put in your best effort to finish it.
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-### Reminder
-
-When trying to connect remotely to your Heroku database on an open network such as a coffee shop, library, or even your University WiFi, it will be blocked. If you are experiencing a Heroku connection error, this could be why.
-
-**Good Luck!**
+### This app is deployed in Heroku !
